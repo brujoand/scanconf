@@ -1,0 +1,2 @@
+# scanconf
+Scandinavian Developer Conferences
