@@ -1,6 +1,8 @@
 # ScanConf
 Scandinavian Developer Conferences
 
+Should be hosted around here https://scanconf.com/
+
 The idea is to make something similar to https://confs.tech/
 but for now, a markdown table will do.
 
