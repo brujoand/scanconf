@@ -8,6 +8,46 @@ async function fetchData() {
 
 function renderTable(data) {
   const table = document.createElement("table");
+
+  const header = document.createElement("tr");
+
+  const titleHeader = document.createElement("th");
+  const titleHeaderText = document.createTextNode("Name");
+  titleHeader.appendChild(titleHeaderText);
+  header.appendChild(titleHeader);
+
+  const countryHeader = document.createElement("th");
+  const countryHeaderText = document.createTextNode("Country");
+  countryHeader.appendChild(countryHeaderText);
+  header.appendChild(countryHeader);
+
+  const cityHeader = document.createElement("th");
+  const cityHeaderText = document.createTextNode("City");
+  cityHeader.appendChild(cityHeaderText);
+  header.appendChild(cityHeader);
+
+  const startDateHeader = document.createElement("th");
+  const startDateHeaderText = document.createTextNode("Start");
+  startDateHeader.appendChild(startDateHeaderText);
+  header.appendChild(startDateHeader);
+
+  const endDateHeader = document.createElement("th");
+  const endDateHeaderText = document.createTextNode("End");
+  endDateHeader.appendChild(endDateHeaderText);
+  header.appendChild(endDateHeader);
+
+  const cfpHeader = document.createElement("th");
+  const cfpHeaderText = document.createTextNode("CFP deadline");
+  cfpHeader.appendChild(cfpHeaderText);
+  header.appendChild(cfpHeader);
+
+  const tagsHeader = document.createElement("th");
+  const tagsHeaderText = document.createTextNode("Tags");
+  tagsHeader.appendChild(tagsHeaderText);
+  header.appendChild(tagsHeader);
+
+  table.appendChild(header);
+
   for (const item of data) {
     const row = document.createElement("tr");
 
