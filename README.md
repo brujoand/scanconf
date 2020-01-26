@@ -1,6 +1,11 @@
 # ScanConf
 Scandinavian Developer Conferences
 
+The idea is to make something similar to https://confs.tech/
+but for now, a markdown table will do.
+
+I've probably missed many conferences so please add by PR :)
+
 
 |Name|Country|City|When|Call For Paper Deadline |Registration Opens|Topics|
 |---|---|---|---|---|---|---|
