@@ -8,47 +8,55 @@ async function fetchData() {
 
 function renderTable(data) {
   const table = document.createElement("table");
+  table.className = "table table-dark table-striped";
 
-  const header = document.createElement("tr");
+
+  const tableHead = document.createElement("thead");
+  tableHead.className = "thead-light"
+  const headerRow = document.createElement("tr");
 
   const titleHeader = document.createElement("th");
   const titleHeaderText = document.createTextNode("Name");
   titleHeader.appendChild(titleHeaderText);
-  header.appendChild(titleHeader);
+  headerRow.appendChild(titleHeader);
 
   const countryHeader = document.createElement("th");
   const countryHeaderText = document.createTextNode("Country");
   countryHeader.appendChild(countryHeaderText);
-  header.appendChild(countryHeader);
+  headerRow.appendChild(countryHeader);
 
   const cityHeader = document.createElement("th");
   const cityHeaderText = document.createTextNode("City");
   cityHeader.appendChild(cityHeaderText);
-  header.appendChild(cityHeader);
+  headerRow.appendChild(cityHeader);
 
   const startDateHeader = document.createElement("th");
   const startDateHeaderText = document.createTextNode("Start");
   startDateHeader.appendChild(startDateHeaderText);
-  header.appendChild(startDateHeader);
+  headerRow.appendChild(startDateHeader);
 
   const endDateHeader = document.createElement("th");
   const endDateHeaderText = document.createTextNode("End");
   endDateHeader.appendChild(endDateHeaderText);
-  header.appendChild(endDateHeader);
+  headerRow.appendChild(endDateHeader);
 
   const cfpHeader = document.createElement("th");
   const cfpHeaderText = document.createTextNode("CFP deadline");
   cfpHeader.appendChild(cfpHeaderText);
-  header.appendChild(cfpHeader);
+  headerRow.appendChild(cfpHeader);
 
   const tagsHeader = document.createElement("th");
   const tagsHeaderText = document.createTextNode("Tags");
   tagsHeader.appendChild(tagsHeaderText);
-  header.appendChild(tagsHeader);
+  headerRow.appendChild(tagsHeader);
 
-  table.appendChild(header);
+  tableHead.appendChild(headerRow);
+  table.appendChild(tableHead);
+
+  const tbody = document.createElement("tbody");
 
   for (const item of data) {
+
     const row = document.createElement("tr");
 
     const title = document.createElement("td");
@@ -85,8 +93,10 @@ function renderTable(data) {
     row.appendChild(cfpDate);
     row.appendChild(tags);
 
-    table.appendChild(row);
+    tbody.appendChild(row);
+
   }
+  table.appendChild(tbody);
 
   const currentTable = document.querySelector("table");
 
