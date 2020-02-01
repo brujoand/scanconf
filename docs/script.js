@@ -7,6 +7,18 @@ const countries = {
   se: 'Sweden',
 };
 
+const tagIcons = {
+  backend: 'fas fa-coffee fa-fw',
+  frontend: 'fab fa-js-square fa-fw',
+  security: 'fas fa-user-secret fa-fw',
+  devops: 'fas fa-cloud fa-fw',
+  ux: 'fas fa-bug fa-fw',
+  functional: 'fas fa-rocket fa-fw',
+  mobile: 'fas fa-mobile-alt fa-fw',
+  game: 'fas fa-gamepad fa-fw',
+  microsoft: 'fab fa-windows fa-fw',
+};
+
 const dateFormatter = new Intl.DateTimeFormat('default', {});
 
 async function fetchData() {
@@ -83,7 +95,13 @@ function renderTable(data) {
     addTableCell(row, dateEle(item.startDate) , 'pv1 ba pa2');
     addTableCell(row, dateEle(item.endDate), 'pv1 ba pa2');
     addTableCell(row, dateEle(item.cfpDate), 'pv1 ba pa2');
-    addTableCell(row, item.tags.join(', '), 'pv1 ba pa2');
+    const tagCell = document.createElement('div');
+    for (const tag of item.tags) {
+      const i = document.createElement('i');
+      i.className = tagIcons[tag];
+      tagCell.appendChild(i);
+    }
+    addTableCell(row, tagCell, 'pv1 ba pa2');
 
     tbody.appendChild(row);
   }

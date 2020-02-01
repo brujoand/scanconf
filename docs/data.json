@@ -8,7 +8,11 @@
     "endDate": "2020-02-20",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -20,7 +24,7 @@
     "endDate": "2020-05-13",
     "cfpDate": "2020-03-13",
     "tags": [
-      "Security"
+      "security"
     ]
   },
   {
@@ -32,7 +36,7 @@
     "endDate": "2020-04-15",
     "cfpDate": "2020-03-02",
     "tags": [
-      "Functional programming"
+      "functional"
     ]
   },
   {
@@ -44,7 +48,11 @@
     "endDate": "2020-05-29",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -56,7 +64,11 @@
     "endDate": "2020-03-05",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -68,7 +80,11 @@
     "endDate": "2019-09-13",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -80,8 +96,12 @@
     "endDate": "2020-09-10",
     "cfpDate": "N/A",
     "tags": [
-      "Java",
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux",
+      "functional"
     ]
   },
   {
@@ -93,7 +113,11 @@
     "endDate": "2020-02-05",
     "cfpDate": "Closed",
     "tags": [
-      ""
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -105,7 +129,7 @@
     "endDate": "2019-10-18",
     "cfpDate": "Closed",
     "tags": [
-      "Game Development"
+      "game"
     ]
   },
   {
@@ -117,7 +141,11 @@
     "endDate": "2020-06-12",
     "cfpDate": "2020-02-15",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -129,7 +157,11 @@
     "endDate": "2020-04-03",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -141,7 +173,7 @@
     "endDate": "2020-10-09",
     "cfpDate": "N/A",
     "tags": [
-      "JavaScript"
+      "frontend"
     ]
   },
   {
@@ -153,7 +185,7 @@
     "endDate": "2020-02-04",
     "cfpDate": "Closed",
     "tags": [
-      ".Net"
+      "microsoft"
     ]
   },
   {
@@ -165,7 +197,11 @@
     "endDate": "2019-10-28",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   },
   {
@@ -177,7 +213,7 @@
     "endDate": "2020-03-31",
     "cfpDate": "Closed",
     "tags": [
-      "User experience"
+      "ux"
     ]
   },
   {
@@ -189,8 +225,7 @@
     "endDate": "2020-04-15",
     "cfpDate": "2020-02-02",
     "tags": [
-      "JavaScript",
-      " Fronted General"
+      "frontend"
     ]
   },
   {
@@ -202,7 +237,11 @@
     "endDate": "2019-11-08",
     "cfpDate": "Closed",
     "tags": [
-      "General"
+      "backend",
+      "frontend",
+      "security",
+      "devops",
+      "ux"
     ]
   }
 ]
