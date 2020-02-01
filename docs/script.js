@@ -99,6 +99,7 @@ function renderTable(data) {
     for (const tag of item.tags) {
       const i = document.createElement('i');
       i.className = tagIcons[tag];
+      i.title = tag;
       tagCell.appendChild(i);
     }
     addTableCell(row, tagCell, 'pv1 ba pa2');
