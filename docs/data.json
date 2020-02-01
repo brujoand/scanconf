@@ -12,6 +12,18 @@
     ]
   },
   {
+    "name": "BSides Oslo",
+    "url": "https://bsidesoslo.no/",
+    "country": "no",
+    "city": "Oslo",
+    "startDate": "2020-05-13",
+    "endDate": "2020-05-13",
+    "cfpDate": "2020-03-13",
+    "tags": [
+      "Security"
+    ]
+  },
+  {
     "name": "FlatMap",
     "url": "https://2020.flatmap.no/",
     "country": "no",
