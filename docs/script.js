@@ -1,9 +1,22 @@
 let data;
 
+const countries = {
+  dk: 'Denmark',
+  fi: 'Finland',
+  no: 'Norway',
+  se: 'Sweden',
+};
+
+const dateFormatter = new Intl.DateTimeFormat('default', {});
+
 async function fetchData() {
-  const res = await fetch("data.json");
+  const res = await fetch('data.json');
   const data = await res.json();
   return data;
+}
+
+function formatDate(isoDate) {
+  return dateFormatter.format(new Date(isoDate));
 }
 
 function addTableHeader(row, text, classes = '') {
@@ -24,55 +37,66 @@ function addTableCell(row, textOrNode, classes = '') {
   row.appendChild(cell);
 }
 
+function dateEle(isoDate) {
+  if (isoDate.match(/\d\d\d\d-\d\d-\d\d/)) {
+    const ele = document.createElement('time');
+    ele.textContent = formatDate(isoDate);
+    ele.setAttribute('datetime', isoDate);
+    return ele;
+  } else {
+    return isoDate;
+  }
+}
+
 function renderTable(data) {
-  const table = document.createElement("table");
-  table.className = "collapse";
+  const table = document.createElement('table');
+  table.className = 'collapse';
 
-  const tableHead = document.createElement("thead");
-  const headerRow = document.createElement("tr");
+  const tableHead = document.createElement('thead');
+  const headerRow = document.createElement('tr');
 
-  addTableHeader(headerRow, "Name", "tl pa2");
-  addTableHeader(headerRow, "Country", "tl pa2");
-  addTableHeader(headerRow, "City", "tl pa2");
-  addTableHeader(headerRow, "Start", "tl pa2");
-  addTableHeader(headerRow, "End", "tl pa2");
-  addTableHeader(headerRow, "CFP deadline", "tl pa2");
-  addTableHeader(headerRow, "Tags", "tl pa2");
+  addTableHeader(headerRow, 'Name', 'tl pa2');
+  addTableHeader(headerRow, 'Country', 'tl pa2');
+  addTableHeader(headerRow, 'City', 'tl pa2');
+  addTableHeader(headerRow, 'Start', 'tl pa2');
+  addTableHeader(headerRow, 'End', 'tl pa2');
+  addTableHeader(headerRow, 'CFP deadline', 'tl pa2');
+  addTableHeader(headerRow, 'Tags', 'tl pa2');
 
   tableHead.appendChild(headerRow);
   table.appendChild(tableHead);
-  const tbody = document.createElement("tbody");
-  tbody.className = "lh-copy"
+  const tbody = document.createElement('tbody');
+  tbody.className = 'lh-copy';
 
   for (const item of data) {
-    const row = document.createElement("tr");
-    row.className = "stripe-dark"
+    const row = document.createElement('tr');
+    row.className = 'stripe-dark';
 
-    const a = document.createElement("a");
+    const a = document.createElement('a');
     a.textContent = item.name;
     a.title = item.name;
     a.href = item.url;
 
     addTableCell(row, a, 'pv1 ba pa2');
-    addTableCell(row, item.country, 'pv1 ba pa2');
+    addTableCell(row, countries[item.country], 'pv1 ba pa2');
     addTableCell(row, item.city, 'pv1 ba pa2');
-    addTableCell(row, item.startDate, 'pv1 ba pa2');
-    addTableCell(row, item.endDate, 'pv1 ba pa2');
-    addTableCell(row, item.cfpDate, 'pv1 ba pa2');
+    addTableCell(row, dateEle(item.startDate) , 'pv1 ba pa2');
+    addTableCell(row, dateEle(item.endDate), 'pv1 ba pa2');
+    addTableCell(row, dateEle(item.cfpDate), 'pv1 ba pa2');
     addTableCell(row, item.tags.join(', '), 'pv1 ba pa2');
 
     tbody.appendChild(row);
   }
 
   table.appendChild(tbody);
-  const currentTable = document.querySelector("table");
+  const currentTable = document.querySelector('table');
 
   currentTable.parentNode.replaceChild(table, currentTable);
 }
 
 function onFilterChange(evt) {
   const term = evt.target.value;
-  if (term === "") {
+  if (term === '') {
     renderTable(data);
   } else {
     const filtered = data.filter(item => {
@@ -86,9 +110,8 @@ function onFilterChange(evt) {
 async function main() {
   data = await fetchData();
   renderTable(data);
-  const input = document.getElementById("filter");
-  input.addEventListener("keyup", onFilterChange);
+  const input = document.getElementById('filter');
+  input.addEventListener('keyup', onFilterChange);
 }
 
-window.addEventListener("load", main);
-
+window.addEventListener('load', main);
