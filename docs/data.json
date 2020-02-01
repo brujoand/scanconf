@@ -2,10 +2,10 @@
   {
     "name": "Booster",
     "url": "https://2020.boosterconf.no/",
-    "country": "Norway",
+    "country": "no",
     "city": "Bergen",
-    "startDate": "18.03.2020",
-    "endDate": "20.02.2020",
+    "startDate": "2020-03-18",
+    "endDate": "2020-02-20",
     "cfpDate": "Closed",
     "tags": [
       "General"
@@ -14,11 +14,11 @@
   {
     "name": "FlatMap",
     "url": "https://2020.flatmap.no/",
-    "country": "Norway",
+    "country": "no",
     "city": "Oslo",
-    "startDate": "14.04.2020",
-    "endDate": "15.04.2020",
-    "cfpDate": "02.03.2020",
+    "startDate": "2020-04-14",
+    "endDate": "2020-04-15",
+    "cfpDate": "2020-03-02",
     "tags": [
       "Functional programming"
     ]
@@ -26,10 +26,10 @@
   {
     "name": "DevSum",
     "url": "https://www.devsum.se/",
-    "country": "Sweden",
+    "country": "se",
     "city": "Stockholm",
-    "startDate": "28.05.2020",
-    "endDate": "29.05.2020",
+    "startDate": "2020-05-28",
+    "endDate": "2020-05-29",
     "cfpDate": "Closed",
     "tags": [
       "General"
@@ -38,10 +38,10 @@
   {
     "name": "GOTO Oslo",
     "url": "https://goto-oslo.com/",
-    "country": "Norway",
+    "country": "no",
     "city": "Oslo",
-    "startDate": "03.03.2020",
-    "endDate": "05.03.2020",
+    "startDate": "2020-03-03",
+    "endDate": "2020-03-05",
     "cfpDate": "Closed",
     "tags": [
       "General"
@@ -50,10 +50,10 @@
   {
     "name": "GOTO Copenhagen",
     "url": "https://gotocph.com/",
-    "country": "Denmark",
+    "country": "dk",
     "city": "Copenhagen",
-    "startDate": "09.09.2019",
-    "endDate": "13.09.2019",
+    "startDate": "2019-09-09",
+    "endDate": "2019-09-13",
     "cfpDate": "Closed",
     "tags": [
       "General"
@@ -62,10 +62,10 @@
   {
     "name": "JavaZone",
     "url": "https://2020.javazone.no/",
-    "country": "Norway",
+    "country": "no",
     "city": "Oslo",
-    "startDate": "09.09.2020",
-    "endDate": "10.09.2020",
+    "startDate": "2020-09-09",
+    "endDate": "2020-09-10",
     "cfpDate": "N/A",
     "tags": [
       "Java",
@@ -75,10 +75,10 @@
   {
     "name": "JFocus",
     "url": "https://www.jfokus.se/",
-    "country": "Sweden",
+    "country": "se",
     "city": "Stockholm",
-    "startDate": "03.02.2020",
-    "endDate": "05.02.2020",
+    "startDate": "2020-02-03",
+    "endDate": "2020-02-05",
     "cfpDate": "Closed",
     "tags": [
       ""
@@ -87,10 +87,10 @@
   {
     "name": "Konsoll",
     "url": "https://konsoll.org/",
-    "country": "Norway",
+    "country": "no",
     "city": "Bergen",
-    "startDate": "17.10.2019",
-    "endDate": "18.10.2019",
+    "startDate": "2019-10-17",
+    "endDate": "2019-10-18",
     "cfpDate": "Closed",
     "tags": [
       "Game Development"
@@ -99,11 +99,11 @@
   {
     "name": "NDC Oslo",
     "url": "https://ndcoslo.com/",
-    "country": "Norway",
+    "country": "no",
     "city": "Oslo",
-    "startDate": "08.06.2020",
-    "endDate": "12.06.2020",
-    "cfpDate": "15.02.2020",
+    "startDate": "2020-06-08",
+    "endDate": "2020-06-12",
+    "cfpDate": "2020-02-15",
     "tags": [
       "General"
     ]
@@ -111,10 +111,10 @@
   {
     "name": "NDC Copenhagen",
     "url": "https://ndccopenhagen.com/",
-    "country": "Denmark",
+    "country": "dk",
     "city": "Copenhagen",
-    "startDate": "01.04.2020",
-    "endDate": "03.04.2020",
+    "startDate": "2020-04-01",
+    "endDate": "2020-04-03",
     "cfpDate": "Closed",
     "tags": [
       "General"
@@ -123,10 +123,10 @@
   {
     "name": "Nordic.js",
     "url": "https://nordicjs.com/2020",
-    "country": "Sweden",
+    "country": "se",
     "city": "Stockholm",
-    "startDate": "08.10.2020",
-    "endDate": "09.10.2020",
+    "startDate": "2020-10-08",
+    "endDate": "2020-10-09",
     "cfpDate": "N/A",
     "tags": [
       "JavaScript"
@@ -135,10 +135,10 @@
   {
     "name": "Swetugg",
     "url": "https://swetugg.se/sthlm-2020",
-    "country": "Sweden",
+    "country": "se",
     "city": "Stockholm",
-    "startDate": "03.02.2020",
-    "endDate": "04.02.2020",
+    "startDate": "2020-02-03",
+    "endDate": "2020-02-04",
     "cfpDate": "Closed",
     "tags": [
       ".Net"
@@ -147,10 +147,10 @@
   {
     "name": "TDC",
     "url": "https://2019.trondheimdc.no",
-    "country": "Norway",
+    "country": "no",
     "city": "Trondheim",
-    "startDate": "28.10.2019",
-    "endDate": "28.10.2019",
+    "startDate": "2019-10-28",
+    "endDate": "2019-10-28",
     "cfpDate": "Closed",
     "tags": [
       "General"
@@ -159,10 +159,10 @@
   {
     "name": "Uxcopenhagen",
     "url": "https://uxcopenhagen.com",
-    "country": "Denmark",
+    "country": "dk",
     "city": "Copenhagen",
-    "startDate": "30.03.2020",
-    "endDate": "31.03.2020",
+    "startDate": "2020-03-30",
+    "endDate": "2020-03-31",
     "cfpDate": "Closed",
     "tags": [
       "User experience"
@@ -171,11 +171,11 @@
   {
     "name": "WebRebels",
     "url": "https://www.webrebels.org/",
-    "country": "Norway",
+    "country": "no",
     "city": "Oslo",
-    "startDate": "14.04.2020",
-    "endDate": "15.04.2020",
-    "cfpDate": "02.02.2020",
+    "startDate": "2020-04-14",
+    "endDate": "2020-04-15",
+    "cfpDate": "2020-02-02",
     "tags": [
       "JavaScript",
       " Fronted General"
@@ -184,10 +184,10 @@
   {
     "name": "ØreDev",
     "url": "https://oredev.org/",
-    "country": "Sweden",
+    "country": "se",
     "city": "Malmö",
-    "startDate": "06.11.2019",
-    "endDate": "08.11.2019",
+    "startDate": "2019-11-06",
+    "endDate": "2019-11-08",
     "cfpDate": "Closed",
     "tags": [
       "General"
