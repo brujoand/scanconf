@@ -176,6 +176,20 @@
       "frontend"
     ]
   },
+    {
+    "name": "Oslo Elm Days",
+    "url": "https://osloelmdays.no/",
+    "country": "no",
+    "city": "Oslo",
+    "startDate": "2020-05-15",
+    "endDate": "2020-05-16",
+    "cfpDate": "2020-02-15",
+    "tags": [
+      "functional",
+      "frontend"
+    ]
+  },
+
   {
     "name": "Swetugg",
     "url": "https://swetugg.se/sthlm-2020",
