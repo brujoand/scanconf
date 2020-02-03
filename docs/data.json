@@ -165,6 +165,18 @@
     ]
   },
   {
+    "name": "NgVikings",
+    "url": "https://ngvikings.org/",
+    "country": "no",
+    "city": "Oslo",
+    "startDate": "2020-05-25",
+    "endDate": "2020-05-26",
+    "cfpDate": "2020-03-01",
+    "tags": [
+      "frontend"
+    ]
+  },
+  {
     "name": "Nordic.js",
     "url": "https://nordicjs.com/2020",
     "country": "se",
