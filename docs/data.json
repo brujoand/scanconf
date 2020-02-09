@@ -201,7 +201,30 @@
       "frontend"
     ]
   },
-
+  {
+    "name": "SEC-T",
+    "url": "https://www.sec-t.org/",
+    "country": "se",
+    "city": "Stockholm",
+    "startDate": "2020-09-16",
+    "endDate": "2020-09-18",
+    "cfpDate": "N/A",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "name": "Security Fest",
+    "url": "https://securityfest.com/",
+    "country": "se",
+    "city": "Gothenburg",
+    "startDate": "2020-05-27",
+    "endDate": "2020-05-29",
+    "cfpDate": "2020-02-29",
+    "tags": [
+      "security"
+    ]
+  },
   {
     "name": "Swetugg",
     "url": "https://swetugg.se/sthlm-2020",

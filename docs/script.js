@@ -62,18 +62,20 @@ function dateEle(isoDate) {
 
 function renderTable(data) {
   const table = document.createElement('table');
-  table.className = 'collapse';
+  table.className = 'f6 mw8';
+  table.cellSpacing = '0';
 
   const tableHead = document.createElement('thead');
   const headerRow = document.createElement('tr');
+  headerRow.className = "stripe-dark"
 
-  addTableHeader(headerRow, 'Name', 'tl pa2');
-  addTableHeader(headerRow, 'Country', 'tl pa2');
-  addTableHeader(headerRow, 'City', 'tl pa2');
-  addTableHeader(headerRow, 'Start', 'tl pa2');
-  addTableHeader(headerRow, 'End', 'tl pa2');
-  addTableHeader(headerRow, 'CFP deadline', 'tl pa2');
-  addTableHeader(headerRow, 'Tags', 'tl pa2');
+  addTableHeader(headerRow, 'Name', 'fw6 tl pa3 white-90 bg-black-60');
+  addTableHeader(headerRow, 'Country', 'fw6 tl pa3 white-90 bg-black-60');
+  addTableHeader(headerRow, 'City', 'fw6 tl pa3 white-90 bg-black-60');
+  addTableHeader(headerRow, 'Start', 'fw6 tl pa3 white-90 bg-black-60');
+  addTableHeader(headerRow, 'End', 'fw6 tl pa3 white-90 bg-black-60');
+  addTableHeader(headerRow, 'CFP deadline', 'fw6 tl pa3 white-90 bg-black-60');
+  addTableHeader(headerRow, 'Tags', 'fw6 tl pa3 white-90 bg-black-60');
 
   tableHead.appendChild(headerRow);
   table.appendChild(tableHead);
@@ -89,12 +91,12 @@ function renderTable(data) {
     a.title = item.name;
     a.href = item.url;
 
-    addTableCell(row, a, 'pv1 ba pa2');
-    addTableCell(row, countries[item.country], 'pv1 ba pa2');
-    addTableCell(row, item.city, 'pv1 ba pa2');
-    addTableCell(row, dateEle(item.startDate) , 'pv1 ba pa2');
-    addTableCell(row, dateEle(item.endDate), 'pv1 ba pa2');
-    addTableCell(row, dateEle(item.cfpDate), 'pv1 ba pa2');
+    addTableCell(row, a, 'pa3');
+    addTableCell(row, countries[item.country], 'pa3');
+    addTableCell(row, item.city, 'pa3');
+    addTableCell(row, dateEle(item.startDate) , 'pa3');
+    addTableCell(row, dateEle(item.endDate), 'pa3');
+    addTableCell(row, dateEle(item.cfpDate), 'pa3');
     const tagCell = document.createElement('div');
     for (const tag of item.tags) {
       const i = document.createElement('i');
@@ -102,7 +104,7 @@ function renderTable(data) {
       i.title = tag;
       tagCell.appendChild(i);
     }
-    addTableCell(row, tagCell, 'pv1 ba pa2');
+    addTableCell(row, tagCell, 'pa3');
 
     tbody.appendChild(row);
   }
